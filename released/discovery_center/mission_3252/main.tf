@@ -6,7 +6,7 @@ resource "random_uuid" "uuid" {}
 
 locals {
   random_uuid       = random_uuid.uuid.result
-  subaccount_domain = lower(replace("mission-3260-${local.random_uuid}", "_", "-"))
+  subaccount_domain = lower(replace("mission-3252-${local.random_uuid}", "_", "-"))
 }
 
 # ------------------------------------------------------------------------------------------------------
